@@ -1,4 +1,4 @@
-module github.com/tfyl/gtls
+module github.com/gospider007/gtls
 
 go 1.21.3
 
@@ -20,3 +20,4 @@ require (
 	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/tools v0.14.0 // indirect
 )
+
