@@ -1,4 +1,4 @@
-module github.com/gospider007/gtls
+module github.com/tfyl/gtls
 
 go 1.21.3
 

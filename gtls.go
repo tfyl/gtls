@@ -33,10 +33,10 @@ func (obj *Acme) TLSConfig(nextProtos []string) *tls.Config {
 	}
 	return config
 }
-func CreateAcme(domainName string, email string) (*Acme, error) {
+func CreateAcme(domainNames []string, email string) (*Acme, error) {
 	cfg := certmagic.NewDefault()
 	certmagic.DefaultACME.Email = email
-	return &Acme{cfg: cfg}, cfg.ManageSync(nil, []string{domainName})
+	return &Acme{cfg: cfg}, cfg.ManageSync(nil, domainNames)
 }
 
 //go:embed ssl/gospider.crt
